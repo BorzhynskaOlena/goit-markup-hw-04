@@ -129,6 +129,20 @@ img {
   border: 1px solid var(--border-potfolio-color);
 }
 /* Блок Герой */
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: 
+  linear-gradient(to right, 
+  rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)),
+  url(../images/overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .hero .container {
   width: 696px;
 }
@@ -334,6 +348,7 @@ padding: 30px; 0
 .current-portfolio-btn {
   color: var(--minor-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-btn-list {
@@ -380,4 +395,8 @@ padding: 30px; 0
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color); 
+}
+
+.example-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
