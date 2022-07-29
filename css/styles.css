@@ -12,6 +12,9 @@
   --logo-header-color: #000000;
   --border-potfolio-color: #eeeeee;
   --border-header-color: #ececec;
+  --benefits-icon-bg-color: #F5F4FA;
+  --icon-color: #AFB1B8;
+  --footer-icon-bc: rgba(255, 255, 255, 0.1);
 }
 h1,
 h2,
@@ -119,12 +122,18 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-contacts-mail:hover,
 .header-contacts-mail:focus,
 .header-contacts-tel:hover,
 .header-contacts-tel:focus {
   color: var(--accent-color);
 }
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .page-header {
   border: 1px solid var(--border-potfolio-color);
 }
@@ -198,6 +207,19 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+}
+.benefit-icon-box {
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--benefits-icon-bg-color);
+  border-radius: 4px;
+}
+
 .benefits-list {
   display: flex;
 }
@@ -236,7 +258,8 @@ img {
 }
 
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -275,8 +298,66 @@ padding: 30px; 0
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
+.soc-net-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.soc-net-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+  background-color: var(--main-background-color);
+}
+
+.soc-net-link:hover,
+.soc-net-link:focus {
+  color: var(--minor-text-color);
+  background-color: var(--accent-color); 
+}
+.team-icon {
+  fill: currentColor;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.clients-item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color); 
+}
+.icon-company {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* Футер */
+.footer-box {
+display: flex;
+align-items: baseline;
+}
 .logo-footer-link {
   margin-bottom: 20px;
 }
@@ -323,7 +404,42 @@ padding: 30px; 0
 .footer {
   background-color: var(--secondary-background-color);
 }
+.join-box {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.join-text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--minor-text-color);
+  margin-bottom: 20px;
+}
+.join-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--minor-text-color);
+  background-color: var(--footer-icon-bc);
+}
 
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color); 
+}
+.join-icon {
+  fill: currentColor;
+}
 /* ---------------ПОРТФОЛИО -----------------*/
 .portfolio-btn-list {
   margin-bottom: 50px;
